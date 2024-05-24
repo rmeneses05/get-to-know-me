@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 
+        Project 5
+        Developer: Rosa Meneses 
+        Date: 05.23.24
+     -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="prjct5.css"/>
+    <script src="prjct5.js" defer></script>
+</head>
+<body>
+    <div id="intro-page">
+        <h1>Welcome to my Quiz</h1>
+        <p>How well do you know Rosa?</p>
+        <img src="dog.png" alt="dog" width="300" height="300">
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+    <div id="quiz-page" style="display: none;">
+        <article>
+            <h1>Quiz about Rosa</h1>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit Quiz</button>
+            <img src="dog.png" alt="dog" width="300" height="300">
+            <div id="results"></div>
+            <div id="timer-container">
+                Time left: <span id="timer">45</span> seconds
+            </div>
+        </article>
+    </div>    
+    <div id="answers-page" style="display: none;">
+        <h1>Quiz Results</h1>
+        <div id="answer-details"></div>
+        <p>You got <span id="correct-count"></span> out of <span id="total-count"></span> questions correct.</p>
+        <button id="retake-quiz">Retake Quiz</button>
+    </div>
+</body>
+</html>
